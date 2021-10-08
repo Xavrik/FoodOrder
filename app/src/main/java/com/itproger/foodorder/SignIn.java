@@ -3,8 +3,11 @@ package com.itproger.foodorder;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +25,8 @@ public class SignIn extends AppCompatActivity {
 
     private Button btnSignIn;
     private EditText editPhone, editPassword;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +49,9 @@ public class SignIn extends AppCompatActivity {
                         if(snapshot.child(editPhone.getText().toString()).exists()){
                             User user = snapshot.child(editPhone.getText().toString()).getValue(User.class);
                             if(user.getPass().equals(editPassword.getText().toString())){
+                                setDefaults("phone", editPhone.getText().toString(),SignIn.this);
+                                setDefaults("name", user.getName(),SignIn.this);
+
                                 Toast.makeText(SignIn.this, "Успешно", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(SignIn.this, FoodPage.class);
                                 startActivity(intent);
@@ -63,7 +71,20 @@ public class SignIn extends AppCompatActivity {
                 });
             }
         });
+    }
+    public static void setDefaults(String key, String value, Context context){
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(key, value);
+        editor.apply();
+    }
+
+    public  static  String getDefaults(String key, Context context){
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+        return sharedPreferences.getString(key, null);
+
 
 
     }
+
 }

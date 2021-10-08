@@ -44,7 +44,6 @@ public class FoodPage extends AppCompatActivity {
              FoodListAdapter arrayAdapter = new FoodListAdapter(FoodPage.this, R.layout.food_item_in_list,allFood);
                 listView.setAdapter(arrayAdapter);
 
-
             }
 
             @Override

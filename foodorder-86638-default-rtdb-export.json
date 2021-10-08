@@ -1,0 +1,46 @@
+{
+  "User" : {
+    "0502296860" : {
+      "name" : "Bob",
+      "pass" : "qwerty"
+    },
+    "0557024384" : {
+      "name" : "John",
+      "pass" : "qwerty"
+    }
+  },
+  "Category": {
+    "1": {
+      "name": "Meat",
+      "image": "meat"
+    },
+    "2": {
+      "name": "Fish",
+      "image": "fish"
+    },
+    "3": {
+      "name": "Soup",
+      "image": "soup"
+    },
+    "4": {
+      "name": "Chicken",
+      "image": "chicken"
+    },
+    "5": {
+      "name": "Pizza",
+      "image": "pizza"
+    },
+    "6": {
+      "name": "Burgers",
+      "image": "burger"
+    },
+    "7": {
+      "name": "Sandwich",
+      "image": "sandwich"
+    },
+    "8": {
+      "name": "Vegan",
+      "image": "vegan"
+    }
+  }
+}

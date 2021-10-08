@@ -1,0 +1,75 @@
+{
+  "Category" : [ null, {
+    "image" : "meat",
+    "name" : "Meat"
+  }, {
+    "image" : "fish",
+    "name" : "Fish"
+  }, {
+    "image" : "soup",
+    "name" : "Soup"
+  }, {
+    "image" : "chicken",
+    "name" : "Chicken"
+  }, {
+    "image" : "pizza",
+    "name" : "Pizza"
+  }, {
+    "image" : "burger",
+    "name" : "Burgers"
+  }, {
+    "image" : "sandwich",
+    "name" : "Sandwich"
+  }, {
+    "image" : "vegan",
+    "name" : "Vegan"
+  } ],
+  "User" : {
+    "0502296860" : {
+      "name" : "Bob",
+      "pass" : "qwerty"
+    },
+    "0557024384" : {
+      "name" : "John",
+      "pass" : "qwerty"
+    },
+    "0557024385" : {
+      "name" : "tor",
+      "pass" : "qwerty"
+    }
+  },
+  "Food": {
+    "1": {
+      "price": "500",
+      "full_text": "text1"
+    },
+    "2": {
+      "price": "5200",
+      "full_text": "text2"
+    },
+    "3": {
+      "price": "5300",
+      "full_text": "text3"
+    },
+    "4": {
+      "price": "540",
+      "full_text": "text4"
+    },
+    "5": {
+      "price": "550",
+      "full_text": "text5"
+    },
+    "6": {
+      "price": "560",
+      "full_text": "text6"
+    },
+    "7": {
+      "price": "570",
+      "full_text": "text7"
+    },
+    "8": {
+      "price": "580",
+      "full_text": "text8"
+    }
+  }
+}
